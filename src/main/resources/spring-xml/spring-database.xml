@@ -27,4 +27,8 @@
    
 	<bean id="helloBean"  class="com.ground.inventory.database.HelloWorldImpl" />
 	
+	<bean id="customerService" class="com.ground.inventory.database.CustomerService">
+		<property name="message" value="i'm property message" />
+	</bean>
+	
 </beans>

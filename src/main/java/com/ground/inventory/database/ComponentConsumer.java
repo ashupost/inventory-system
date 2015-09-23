@@ -8,16 +8,20 @@ public class ComponentConsumer {
 
 	@Autowired
 	private SimpleWriter component;
-	
+
 	@Autowired
 	private SimpleWriterService service;
 
 	@Autowired
 	HelloWorld helloWorld;
 
+	@Autowired
+	CustomerService customerService;
+
 	public void consume() {
 		component.sayHello();
 		service.sayHello();
 		helloWorld.printHelloWorld("Workign");
+		customerService.printMessage();
 	}
 }
