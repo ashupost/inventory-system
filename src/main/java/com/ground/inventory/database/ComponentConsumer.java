@@ -8,6 +8,7 @@ public class ComponentConsumer {
 
 	@Autowired
 	private SimpleWriter component;
+	
 	@Autowired
 	private SimpleWriterService service;
 
