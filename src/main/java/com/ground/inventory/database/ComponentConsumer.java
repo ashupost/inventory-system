@@ -19,6 +19,8 @@ public class ComponentConsumer {
 	CustomerService customerService;
 
 	public void consume() {
+		String methodName = Thread.currentThread().getStackTrace()[1].getMethodName();
+System.out.println("methodName="+methodName);
 		component.sayHello();
 		service.sayHello();
 		helloWorld.printHelloWorld("Workign");
